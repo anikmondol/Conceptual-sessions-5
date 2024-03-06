@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .google_font{
+            font-family: "Open Sans", sans-serif;
+        }
+    </style>    
+
 </head>
-<body>
+
+<body class="google_font">
     <header class="bg-[#0E1133]">
+
+        <!-- nav section -->
         <nav class="container mx-auto px-5">
             <div class="flex justify-between py-6 text-white">
                 <div class="flex justify-center items-center space-x-8 ">
@@ -15,10 +35,10 @@
                         <img src="./assets/logo-3.png" alt="">
                     </div>
                     <div class="justify-center items-center space-x-4 text-lg font-semibold hidden md:hidden lg:flex">
-                    <a class="hover:text-red-400 hover:underline duration-300" href="#">Home</a>
-                    <a class="hover:text-red-400 hover:underline duration-300" href="#">About</a>
-                    <a class="hover:text-red-400 hover:underline duration-300" href="#">Blog</a>
-                    <a class="hover:text-red-400 hover:underline duration-300" href="#">content</a>
+                        <a class="hover:text-red-400 hover:underline duration-300" href="#">Home</a>
+                        <a class="hover:text-red-400 hover:underline duration-300" href="#">About</a>
+                        <a class="hover:text-red-400 hover:underline duration-300" href="#">Blog</a>
+                        <a class="hover:text-red-400 hover:underline duration-300" href="#">content</a>
                     </div>
                 </div>
                 <div class="space-x-4 hidden md:flex">
@@ -36,8 +56,24 @@
                 </div> -->
             </div>
         </nav>
+
+        <section class="bg-[#12174E]">
+            <div class="container mx-auto px-5 text-center text-white space-y-5 py-24">
+                <h1 class="capitalize text-6xl font-bold">creative way to <br> showcase your <span
+                        class="text-orange-400">app</span></h1>
+                <p class="opacity-75"> This is a sit amet consectetur, adipisicing elit. Necessitatibus, cum!</p>
+                <div class="space-x-4  flex justify-center items-center">
+                    <button class="text-lg font-semibold bg-orange-500 px-6 py-3 rounded-md hover:bg-transparent
+                border border-orange-500 duration-300">Get Start</button>
+                    <button class="text-lg font-semibold flex justify-center items-center gap-2"><img
+                            src="./assets/play-button.png" alt=""> Play Video</button>
+                </div>
+            </div>
+        </section>
+
     </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
